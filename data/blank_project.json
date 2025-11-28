@@ -1,0 +1,84 @@
+{
+  "palette": {},
+  "character": {
+    "body": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "head": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "upper": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "lower": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "face": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    }
+  },
+  "battler": {
+    "body": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "head": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "upper": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "lower": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "face": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    }
+  },
+  "face": {
+    "body": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "head": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "upper": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "lower": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    },
+    "face": {
+      "file": "",
+      "position": { "x": "0", "y": "0" },
+      "recolors": {}
+    }
+  }
+}

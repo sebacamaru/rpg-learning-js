@@ -12,10 +12,35 @@
     <script src="editor/src/core/helper.js"></script>
     <script src="editor/src/core/ui.js"></script>
     <script src="editor/src/core/sprite.js"></script>
+    <script src="editor/src/core/manager.js"></script>
     <script src="editor/src/components/loading.js"></script>
     <script src="editor/src/components/sidebar.js"></script>
     <script src="editor/src/components/toolbar.js"></script>
     <script src="editor/src/components/previewer.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", async () => {
+        try {
+          let data;
+
+          UI.loading.value = true;
+          if (localStorage.getItem("project.rrcd")) {
+            data = JSON.parse(localStorage.getItem("project.rrcd"));
+          } else {
+            const res = await fetch("/data/blank_project.json");
+            if (!res.ok) throw new Error("No se pudo cargar el proyecto en blanco.");
+            data = await res.json();
+          }
+
+          UI.project = new Project(data);
+        } catch (e) {
+          console.error("Error al cargar el proyecto:", e);
+          throw new Error("Hubo un problema al cargar el proyecto.");
+        } finally {
+          console.log("El proyecto se cargó correctamente.");
+          UI.loading.value = false;
+        }
+      });
+    </script>
   </head>
   <body>
     <loading-component />

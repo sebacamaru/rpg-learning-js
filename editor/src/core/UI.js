@@ -219,7 +219,7 @@ class Component extends HTMLElement {
 // Globals
 
 const UI = {
-  project: signal(null),
+  project: null,
   editing: signal("character"),
   loading: signal(false),
 };
